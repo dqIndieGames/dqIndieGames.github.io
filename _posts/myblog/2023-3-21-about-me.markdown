@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "Abuot Me!"
+date:   2023-3-21 20:15:59 +0800
+categories: myblog
+image: ""
+lang: en
+
+titleImg: "assets/myPic/myblog/aesprite_1.png"
+
+contentType: myblog
+
+---
+
+
+# The Story of an Indie Game Developer - DQ
+Hello everyone, I'm DQ, an independent game developer from China. I'm 28 years old and have 6 years of game development experience. In this article, I want to share my personal journey and why I chose the path of indie game development.
+
+## A Childhood Passion for Gaming
+My love for gaming started at the age of 6 when I first played Counter-Strike on a PC. My cousin bought me an AWP, and I used it to defeat the computer opponents. Since then, I've been hooked on games. Despite my parents' concerns about gaming affecting my studies, I always found ways to sneak in some gaming time and outsmart my parents.
+
+## Aspiring to Become a Pro Gamer
+During my middle school years, I aspired to become a professional gamer. I frequently competed on online gaming platforms to improve my skills and analyzed my losses for improvement. However, the pressure of reality forced me to give up this dream and focus on my studies instead.
+
+## A Determination to Develop Games
+Every Chinese New Year, I would play online games with my two cousins. We often struggled to find interesting games to play, resorting to older titles like Warcraft 3 and Counter-Strike. This sparked the idea of developing my own game. So, when I went to college, I chose software engineering as my major, determined to pursue a career in game development.
+
+## Joining a Game Company, Gaining Experience
+After graduating from college, I was fortunate enough to join a game company where I started using Unity to develop games as a programmer. There, I accumulated about two years of practical development experience.
+
+## Entrepreneurial Attempt, Clashing Visions
+Later, I teamed up with two college classmates to start our own game development venture. Although we managed to secure investment and invited another classmate to join us, differences in our gaming philosophies, especially regarding commercialization, led to my departure from the team. I couldn't accept an over-reliance on in-game purchases, as I believed it would take away the essential fun of gaming.
+
+## A Period of Confusion, Regaining Confidence
+After leaving the team, I went through a period of confusion and didn't even want to touch the game I had spent three years developing. To make ends meet, I decided to use my programming skills to work as a front-end developer in a large company, utilizing Unreal Engine 4. After a year of exploration and reflection, I realized that my passion for gaming and desire to create my own game still burned strong. Ultimately, I chose to quit my job and become an independent game developer, pursuing my dream.
+
+## Embracing Challenges, Indie Development
+I knew that the road to becoming an indie game developer would be long and arduous. In addition to programming skills, mastering art skills is also essential – a challenge for many programmers. However, in order to fulfill my dream, I chose this path without hesitation.
+
+Now, I am working on developing my own indie game, planning to start on Steam and gradually make my dream a reality.
+
+Thank you for reading until the end. If you have any questions or suggestions, please feel free to contact me via email at 594117248@qq.com. Once again, thank you, I'm DQ, and I look forward to sharing the joy of gaming with you!

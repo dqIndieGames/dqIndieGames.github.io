@@ -1,0 +1,37 @@
+--- 
+--- 
+
+
+.blog-card-image {
+    display: block ;
+    object-fit: cover ;
+    height: 23vh !important; /* Adjust this value for your desired height */
+    width: 23vh !important; /* Adjust this value for your desired height */
+    margin: 0 0rem 0rem 0 !important;
+    border-radius: 9999px ;
+    box-shadow: 0 4px 32px 0 black ;
+   
+}
+
+.blog-card-content-limited-height {
+    max-height: 200px; /* 设置为您想要的最大高度 */
+    overflow-y: auto; /* 当内容超过最大高度时，添加滚动条 */
+  }
+
+
+  .hover-effect:hover .blog-card-image {
+    box-shadow: 0 4px 32px 0 white;
+  }
+
+
+  .column.responsive-padding {
+    padding-right: 28rem;
+    padding-left: 2rem;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .column.responsive-padding {
+      padding-right: 2rem;
+    }
+
+  }

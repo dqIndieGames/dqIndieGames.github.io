@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/blog-card.css" /> 
+  <body>
+
+
+    <head>
+      <style>
+        .hero.is-fullheight .hero-body {
+          align-items: flex-start;
+        }
+      </style>
+    </head>
+
+
+
+    <section class="hero is-dark is-fullheight ">
+
+        <div class="hero-head">
+            {% include header.html %}
+    
+        </div>
+    
+        <div class="mt-6"></div>
+    
+        <div class="hero-body mt-6">
+          <figure class="avatar image custom-nav-image">
+            <a onclick="goToRoot('{{ site.baseurl }}', '{{ page.lang }}')">
+                <img class="is-rounded custom-nav-image" src="{{ site.baseurl }}/{{ page.titleImg }}" alt="">
+            </a>
+          </figure>
+
+        </div>
+
+
+
+        <!-- <script>
+          function setCustomImageHeight() {
+              // 获取屏幕宽度
+              var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+  
+              // 计算图片宽度（屏幕宽度减去 6rem）
+              var imageWidth = screenWidth - (6 * 16); // 6rem = 6 * 16px
+  
+              // 计算图片高度（图片宽度的三分之一）
+              var imageHeight = imageWidth / 3;
+  
+              // 为所有带有 custom-image 类的图片设置高度
+              var customImages = document.getElementsByClassName('custom-image');
+              for (var i = 0; i < customImages.length; i++) {
+                  customImages[i].style.height = imageHeight + 'px';
+              }
+
+
+
+              for (var i = 0; i < customImages.length; i++) {
+                  customImages[i].style.width = (imageHeight * 2) + 'px';
+              }
+          }
+  
+          // 页面加载完成后设置自定义图片高度
+          window.addEventListener('load', setCustomImageHeight);
+  
+          // 当窗口大小发生变化时，重新设置自定义图片高度
+          window.addEventListener('resize', setCustomImageHeight);
+      </script> -->
+
+
+
+
+
+
+
+
+
+        <div id="results-container"></div>
+        <!--Blog Cards Section-->
+        {% for post in site.posts %}
+          {% if post.contentType == page.contentType and page.lang == post.lang %}
+              {% include blog-card.html %}
+          {% endif %}
+        {% endfor %}
+      
+
+
+
+
+
+
+
+
+        <!-- <script src="{{ site.baseurl }}/js/simple-jekyll-search.js"></script> 
+        <script>
+          
+          SimpleJekyllSearch({
+              searchInput: document.getElementById('search'),
+              resultsContainer: document.getElementById('results-container'),
+              json: '/search.json',
+              searchResultTemplate: '<div style="border: 0.15rem dashed black" class="searchResult columns has-text-centered" id="blog-card"><div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet"><div class="image is-16by9" style="background-image: url({titleImage});"></div></div><a href="{url}"><div class="column has-text-left-desktop has-text-left-tablet"><h1 class="title is-size-4-touch">{title}</h1><div class="content has-text-grey">{content}<hr class="has-background-grey"><span class="has-text-grey">Published on <span class="has-text-weight-semibold">{date}</span></span> | <i class="fas fa-clock"></i> <span class="has-text-weight-semibold">{readtime} min</span> read</div></div></a></div>',
+              noResultsText: '<div class="subtitle has-text-centered is-uppercase">No Results Found</div><hr class="has-background-black" style="margin: 0.5rem 5rem 2.5rem 5rem">',
+              fuzzy: true,});
+      </script>  -->
+
+
+
+
+    </section>
+
+    <div class="post-content"> {{content}} </div>
+
+
+
+    <script src="{{ site.baseurl }}/assets/js/modal-fx.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>  
+    <script src="{{ site.baseurl }}/assets/js/wild.js"></script>
+
+          {% include footer.html %}
+  </body>
+</html>

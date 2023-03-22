@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+  <body>
+    <section class="hero is-dark is-halfheight ">
+
+        <div class="hero-head">
+            {% include header.html %}
+            
+            <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/post.css" />   
+        </div>
+    
+    
+        <div class="mt-6"></div>
+
+        <div class="hero-body mt-6 ">
+
+
+
+          <!-- <figure class="avatar image custom-image">
+            <a onclick="goToRoot('{{ site.baseurl }}', '{{ page.lang }}')">
+                <img class="is-rounded custom-image" src="{{ site.baseurl }}/{{ page.titleImg }}" alt="">
+            </a>
+          </figure>
+
+            <div class="container has-text-centered is-centered">
+            
+                <h1 class="title is-1">
+                  {{ page.title | escape }}
+                </h1>
+                <p class="subtitle">
+                  {%- assign date_format = site.bootstrap.date_format | default: "%b %-d, %Y" -%}
+                  {{ page.date | date: date_format }}
+                </p>
+              </div>
+        </div> -->
+
+
+        <div class="container has-text-centered is-centered">
+          <div class="columns is-vcentered">
+            <div class="column is-flex is-justify-content-flex-end" style="padding-right: 36px;"> <!-- 添加 is-flex 和 is-justify-content-flex-end 类 -->
+     
+              <figure class="avatar image custom-square-image ">
+                <a onclick="goToRoot('{{ site.baseurl }}', '{{ page.lang }}')">
+                  <img class="is-rounded custom-square-image" src="{{ site.baseurl }}/{{ page.titleImg }}" alt="">
+                </a>
+              </figure>
+            </div>
+            <div class="column is-flex is-justify-content-flex-start" style="padding-left: 36px;"> <!-- 添加 is-flex 和 is-justify-content-flex-start 类 -->
+              <div class="container">
+                <div class="columns">
+                  <div class="column">
+                    <h1 class="title is-1">
+                      {{ page.title | escape }}
+                    </h1>
+                    <p class="subtitle">
+                      {%- assign date_format = site.bootstrap.date_format | default: "%b %-d, %Y" -%}
+                      {{ page.date | date: date_format }}
+                    </p>
+                  </div>
+                  <div class="column"> 
+                    <!-- 空列，用于占位 -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+          <!-- <script>
+            function setCustomImageHeight() {
+                // 获取屏幕宽度
+                var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    
+                // 计算图片宽度（屏幕宽度减去 6rem）
+                var imageWidth = screenWidth - (6 * 16); // 6rem = 6 * 16px
+    
+                // 计算图片高度（图片宽度的三分之一）
+                var imageHeight = imageWidth / 3;
+    
+                // 为所有带有 custom-image 类的图片设置高度
+                var customImages = document.getElementsByClassName('custom-image');
+                for (var i = 0; i < customImages.length; i++) {
+                    customImages[i].style.height = imageHeight + 'px';
+                }
+  
+  
+  
+                for (var i = 0; i < customImages.length; i++) {
+                    customImages[i].style.width = imageHeight + 'px';
+                }
+            }
+    
+            // 页面加载完成后设置自定义图片高度
+            window.addEventListener('load', setCustomImageHeight);
+    
+            // 当窗口大小发生变化时，重新设置自定义图片高度
+            window.addEventListener('resize', setCustomImageHeight);
+        </script> -->
+
+
+
+       </div> 
+
+
+       <div id="results-container"></div>
+
+
+
+
+
+    </section>
+
+    <div class="content post-content" style="width: 50%;"> {{content}} </div>
+
+
+
+    <script src="{{ site.baseurl }}/assets/js/modal-fx.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>  
+    <script src="{{ site.baseurl }}/assets/js/wild.js"></script>
+
+          {% include footer.html %}
+  </body>
+</html>

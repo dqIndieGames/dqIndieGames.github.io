@@ -1,0 +1,115 @@
+--- 
+--- 
+
+
+// .header-background {
+//     background-image: url("{{ site.baseurl }}/assets/myPic/bg_top2_withTitle.png");
+//     background-position: center top; // 调整图片位置，使其水平居中，垂直顶部对齐
+//     background-repeat: no-repeat;
+//     background-size: auto;
+//   }
+
+@font-face {
+    font-family: 'enFont';
+    // src: url('/assets/fonts/en/VT323-Regular.ttf') format('truetype');
+    src: url('/assets/fonts/zh_CN/fusion-pixel-proportional.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'zh_CNFont';
+    src: url('/assets/fonts/zh_CN/fusion-pixel-proportional.woff2') format('woff2');
+  }
+  
+  body {
+    font-family: 'enFont', sans-serif; 
+  }
+  
+  body.en {
+    font-family: 'enFont', sans-serif; 
+  }
+  
+  body.zh_CN {
+    font-family: 'zh_CNFont', sans-serif; 
+  }
+  
+  .custom-ZH-CN {
+    font-family: 'zh_CNFont', sans-serif; 
+  }
+  
+  .custom-en {
+    font-family: 'enFont', sans-serif; 
+  }
+
+
+
+  #results-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .newbody {
+    display: flex;
+    align-items: flex-start;
+  }
+
+
+
+
+  .hero.is-fullheight .hero-body {
+    align-items: flex-start;
+  }
+
+  .custom-image {
+    display: block ;
+    object-fit: cover ;
+    height: 40vh !important; /* Adjust this value for your desired height */
+    margin: 0 auto 1rem auto ;
+    border-radius: 9999px ;
+    box-shadow: 0 4px 32px 0 black ;
+}
+
+
+@media screen and (max-width: 768px) {
+    .custom-image {
+        height: 50vh; /* Adjust this value for mobile devices */
+    }
+}
+
+
+.custom-nav-image {
+  display: block ;
+  object-fit: cover ;
+  height: 40vh !important; /* Adjust this value for your desired height */
+  width: 120vh !important; /* Adjust this value for your desired height */
+  margin: 0 auto 1rem auto ;
+  border-radius: 9999px ;
+  box-shadow: 0 4px 32px 0 black ;
+}
+
+
+@media screen and (max-width: 768px) {
+  .custom-nav-image {
+      height: 50vh; /* Adjust this value for mobile devices */
+      width: 150vh !important; /* Adjust this value for your desired height */
+  }
+}
+
+
+
+
+.custom-square-image {
+    display: inline-block ;
+    object-fit: cover ;
+    height: 40vh !important; /* Adjust this value for your desired height */
+    width: 40vh !important; /* Adjust this value for your desired height */
+    margin: 0 0 1rem 0 !important;
+    border-radius: 0px ;
+    box-shadow: 0 4px 32px 0 black ;
+}
+@media screen and (max-width: 768px) {
+    .custom-square-image {
+        height: 50vh; /* Adjust this value for mobile devices */
+        width: 50vh; /* Adjust this value for mobile devices */
+    }
+}
+  

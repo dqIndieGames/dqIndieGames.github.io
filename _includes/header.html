@@ -1,0 +1,211 @@
+<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" onclick="goToRoot('{{ site.baseurl }}', '{{ page.lang }}')">
+      <h2 class="title is-4">{{ site.data.localize.myTitle[page.lang] }}</h2>
+      <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start custom_font_en">
+      <a class="navbar-item"
+        onclick="getLocalizedUrl('{{ site.baseurl }}','subhtml/myblog/navigation.html', '{{ page.lang }}')">
+        {{ site.data.localize.myBlog[page.lang] }}
+      </a>
+
+      <a class="navbar-item"
+        onclick="getLocalizedUrl('{{ site.baseurl }}','subhtml/unityplugin/navigation.html', '{{ page.lang }}')">
+        {{ site.data.localize.unityPlugin[page.lang] }}
+      </a>
+
+      <a class="navbar-item"
+        onclick="getLocalizedUrl('{{ site.baseurl }}','subhtml/mygames/navigation.html', '{{ page.lang }}')">
+        {{ site.data.localize.myGames[page.lang] }}
+      </a>
+
+
+
+
+
+      <!-- <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item sub-menu-item">
+            About
+          </a>
+          <a class="navbar-item sub-menu-item">
+            Jobs
+          </a>
+          <a class="navbar-item sub-menu-item">
+            Contact
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item sub-menu-item">
+            Report an issue
+          </a>
+        </div>
+      </div> -->
+    </div>
+
+
+
+
+
+    <!-- <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-link">
+              <strong>Sign up</strong>
+            </a>
+            <a class="button is-light">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div> -->
+
+
+
+
+    <div class="navbar-end">
+
+      <div class="navbar-item" style="justify-content: flex-end;">
+        {% if page.lang == "en" %}
+        <a class="button is-link custom-ZH_CN" onclick="getPageLocalizedUrl('{{ site.baseurl }}','{{ page.url }}', 'zh_CN')">
+          <strong>中文</strong>
+        </a>
+        {% else %}
+        <a class="button is-link custom-en" onclick="getPageLocalizedUrl('{{ site.baseurl }}','{{ page.url }}', 'en')">
+          <strong>Engilsh</strong>
+        </a>
+        {% endif %}
+
+      </div>
+
+
+
+    </div>
+
+
+
+
+  </div>
+
+
+</nav>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    const dropdownItems = Array.prototype.slice.call(document.querySelectorAll('.navbar-item.has-dropdown'), 0);
+
+    // 为每个 'navbar-burger' 元素添加一个点击事件
+    navbarBurgers.forEach(el => {
+      el.addEventListener('click', () => {
+        const target = el.dataset.target;
+        const targetElement = document.getElementById(target);
+
+        el.classList.toggle('is-active');
+        targetElement.classList.toggle('is-active');
+
+        if (el.classList.contains('is-active')) {
+          dropdownItems.forEach(dropdown => {
+            dropdown.classList.remove('is-hoverable');
+          });
+        } else {
+          dropdownItems.forEach(dropdown => {
+            dropdown.classList.add('is-hoverable');
+            dropdown.classList.remove('is-active');
+          });
+        }
+      });
+    });
+
+    // 为每个 'navbar-link' 元素添加一个点击事件
+    const navbarLinks = Array.prototype.slice.call(document.querySelectorAll('.navbar-item.has-dropdown'), 0);
+    navbarLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 1023) {
+          const dropdownItem = link.closest(".navbar-item.has-dropdown");
+          const dropdownMenu = dropdownItem.querySelector(".navbar-dropdown");
+          dropdownItem.classList.toggle("is-active");
+
+          if (dropdownMenu.style.display === "none") {
+            dropdownMenu.style.display = "block";
+          } else {
+            dropdownMenu.style.display = "none";
+          }
+        }
+      });
+    });
+
+
+
+    function toggleMobileDropdown() {
+      const isMobile = window.innerWidth <= 1023;
+      const dropdowns = document.querySelectorAll(".navbar-dropdown");
+
+      dropdowns.forEach((dropdown) => {
+        if (isMobile) {
+          dropdown.style.display = "none";
+        } else {
+          dropdown.style.display = "block";
+        }
+      });
+    }
+
+
+
+
+    // 当窗口大小改变时，检查是否需要添加 'is-hoverable' 类
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1023) {
+        dropdownItems.forEach(dropdown => {
+          dropdown.classList.add('is-hoverable');
+          dropdown.classList.remove('is-active');
+        });
+      } else {
+        dropdownItems.forEach(dropdown => {
+          dropdown.classList.remove('is-hoverable');
+        });
+      }
+      toggleMobileDropdown();
+    });
+  });
+
+
+
+
+
+  //   function debounce(func, wait) {
+  //   let timeout;
+  //   return function () {
+  //     const context = this,
+  //       args = arguments;
+  //     const later = function () {
+  //       timeout = null;
+  //       func.apply(context, args);
+  //     };
+  //     clearTimeout(timeout);
+  //     timeout = setTimeout(later, wait);
+  //   };
+  // }
+
+  // // 在这里使用 debounce 函数
+  // window.addEventListener("resize", debounce(toggleMobileDropdown, 250));
+
+
+
+
+</script>
