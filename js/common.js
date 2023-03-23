@@ -5,7 +5,7 @@ function getLocalizedUrl(baseurl, url, lang) {
     } else {
         temp = baseurl + '/' + lang + '/' + url;
     }
-    window.location = temp;
+    window.location = temp.toLowerCase();
   }
 
 
@@ -23,7 +23,7 @@ function getLocalizedUrl(baseurl, url, lang) {
     } else {
         temp = baseurl + '/' + lang + pageurl;
     }
-    window.location = temp;
+    window.location = temp.toLowerCase();
   }
 
   function goToRoot(baseurl, lang) {
@@ -33,5 +33,5 @@ function getLocalizedUrl(baseurl, url, lang) {
     } else {
         temp = baseurl + '/' + lang + '/' + 'index.html';
     }
-    window.location = temp;
+    window.location = temp.toLowerCase();
   }
