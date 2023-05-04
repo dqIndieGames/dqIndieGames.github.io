@@ -16,13 +16,14 @@ contentType: unityplugin
 # User Manual
 
 ## Summary
-EasyPrefabGrid is a user-friendly 2D prefab generation toolset that features visual grid drawing in Sceneview, prefab generation, and cursor-assisted positioning. The toolset is designed to support batch prefab generation for improved efficiency and offers exceptional customization and flexibility.
+EasyPrefabGrid is a user-friendly 2D prefab generation toolset that features visual grid drawing in Sceneview, prefab generation, and cursor-assisted positioning. The toolset is designed to support batch prefab generation for improved efficiency and offers exceptional customization and flexibility.  
+<!-- [PluginAddress](https://assetstore.unity.com/packages/slug/250262)   -->
 
 ## Describe
 * 2D Prefab Generation Tool  
 Visually place or batch generate any prefab in Sceneview based on the configured grid size and custom dimensions. Highly customizable and flexible.  
 ![SinglePrefabCreate]({{site.baseurl}}/assets/myPic/unityplugin/easyprefabgrid/singleprefabcreate.gif)  
-![BatchPrefabCreate]({{site.baseurl}}/assets/myPic/unityplugin/easyprefabgrid/batchprefabcreate.gif)  
+![BatchPrefabCreate]({{site.baseurl}}/assets/myPic/unityplugin/easyprefabgrid/batchprefabcreate1.gif)  
 
 * Sceneview Visual Grid Drawing  
 Easily configure and draw baselines and grid sizes. Accurately plan prefab placement, preventing the need for blind dragging of prefabs.  

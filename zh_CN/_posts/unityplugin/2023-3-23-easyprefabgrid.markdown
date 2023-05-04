@@ -16,13 +16,14 @@ contentType: unityplugin
 # 用户手册
 
 ## 概述
-EasyPrefabGrid 是一款方便易用的 2D 预制生成工具集，提供了在 Sceneview 中进行视觉网格绘制、预制生成和光标辅助定位的功能。工具集支持批量预制生成以提高效率，且具有出色的自定义性和灵活性。
+EasyPrefabGrid 是一款方便易用的 2D 预制生成工具集，提供了在 Sceneview 中进行视觉网格绘制、预制生成和光标辅助定位的功能。工具集支持批量预制生成以提高效率，且具有出色的自定义性和灵活性。  
+<!-- [插件地址](https://assetstore.unity.com/packages/slug/250262)   -->
 
 ## 描述
 * 2D 预制生成工具  
 根据配置的网格尺寸和自定义尺寸，在 Sceneview 中可视化放置或批量生成任何预制。高度可定制和灵活。  
 ![SinglePrefabCreate]({{site.baseurl}}/assets/myPic/unityplugin/easyprefabgrid/singleprefabcreate.gif)  
-![BatchPrefabCreate]({{site.baseurl}}/assets/myPic/unityplugin/easyprefabgrid/batchprefabcreate.gif)  
+![BatchPrefabCreate]({{site.baseurl}}/assets/myPic/unityplugin/easyprefabgrid/batchprefabcreate1.gif)  
 
 * Sceneview 视觉网格绘制  
 轻松配置和绘制基线和网格尺寸。精确规划预制件的放置，避免盲目拖拽预制件。  
