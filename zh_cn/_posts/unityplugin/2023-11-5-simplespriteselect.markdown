@@ -13,7 +13,7 @@ contentType: unityplugin
 ---
 
 
-# SimpleSpriteSelect
+# Unity SimpleSpriteSelect
 
 SimpleSpriteSelect 是一个扩展的精灵编辑器，用于从精灵中查找引用，并实现快速拖放功能。
 
