@@ -17,6 +17,8 @@ contentType: unityplugin
 
 SimpleSpriteSelect 是一个扩展的精灵编辑器，用于从精灵中查找引用，并实现快速拖放功能。
 
+* [github项目地址](https://github.com/dqIndieGames/SimpleSpriteSelect)
+
 ## 如何打开
 ![image](https://github.com/dqIndieGames/SimpleSpriteSelect/assets/17854132/c1b36ad0-9cb6-4e44-b0c8-8112bc7967a6)
 
@@ -49,5 +51,4 @@ SimpleSpriteSelect 是一个扩展的精灵编辑器，用于从精灵中查找�
 * Unity Assets 的 AssetDatabase.GetDependencies() 只能获取到基础资产（例如纹理，但不包括精灵）。
 
 * 使用 SerializedObjectHelperUtils 可以找到详细的对象依赖项
-
 

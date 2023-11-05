@@ -11,6 +11,13 @@ function getLocalizedUrl(baseurl, url, lang) {
 
   function getPageLocalizedUrl(baseurl, pageurl, lang) {
     let temp;
+
+    // if pageurl == "/", add index.html
+    if (pageurl == "/") {
+        pageurl = "/index.html";
+    }
+
+
     if (lang === 'en') {
         // 查找第二个斜杠的位置
         const index = pageurl.indexOf('/', pageurl.indexOf('/') + 1);
