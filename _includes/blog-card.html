@@ -1,18 +1,31 @@
-
 <a href="{{post.url | absolute_url}}" class="hover-effect">
     <div class="columns has-text-centered is-vcentered " id="blog-card">
-        
+
         <div class="column is-marginless is-paddingless is-one-third is-flex is-justify-content-flex-end">
             <div class="image blog-card-image" style="background-image: url({{site.baseurl}}/{{post.titleImg}});"></div>
         </div>
-            <div class="column has-text-left-desktop has-text-left-tablet responsive-padding">
-                <h1 class="title is-size-4-touch">{{post.title}}</h1>
-                <div class="content has-text-grey blog-card-content-limited-height">
-                    {{ post.content | strip_html | strip_newlines | strip | escape | truncate: 220 }}
-                    <hr class="has-background-grey">
-                    <span class="has-text-grey">Published on <span class="has-text-weight-semibold">{{ post.date | date: "%-B %d, %Y" }}</span></span> | <i class="fas fa-clock"></i> <span class="has-text-weight-semibold">about {% assign words = post.content | number_of_words %}{%- unless content.size == 0 -%}{{ words | divided_by:180 }} min{% endunless %}</span> read
-                </div>
+        <div class="column has-text-left-desktop has-text-left-tablet responsive-padding">
+            <h1 class="title is-size-4-touch">{{post.title}}</h1>
+            <div class="content has-text-grey blog-card-content-limited-height">
+                {{ post.content | strip_html | strip_newlines | strip | escape | truncate: 220 }}
+                <hr class="has-background-grey">
+                <span class="has-text-grey">Published on
+                    <span class="has-text-weight-semibold">{{ post.date | date: "%-B %d, %Y" }}</span>
+                </span>
+                |
+                <i class="fas fa-clock"></i>
+                <span class="has-text-weight-semibold">
+                    {% assign words = post.content | number_of_words %}
+                    {% assign read_time = words | divided_by:180 %}
+                    {% if read_time == 0 %}
+                        about 1 min
+                    {% else %}
+                        about {{ read_time }} min
+                    {% endif %}
+                </span> read
             </div>
+
+        </div>
     </div>
 </a>
 <div class="mt-6"></div>
