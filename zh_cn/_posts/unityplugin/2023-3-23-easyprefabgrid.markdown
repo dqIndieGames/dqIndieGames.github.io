@@ -4,7 +4,7 @@ title:  "Easy Prefab Grid"
 date:   2023-3-23 16:55:24 +0800
 categories: unityplugin
 image: ""
-lang: zh_CN
+lang: zh_cn
 
 titleImg: "assets/myPic/unityplugin/easyprefabgrid/Image_ps_web_512.png"
 

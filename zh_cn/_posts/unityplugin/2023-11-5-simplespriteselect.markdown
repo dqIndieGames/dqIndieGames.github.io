@@ -4,7 +4,7 @@ title:  "Simple Sprite Select"
 date:   2023-11-5 16:00:00 +0800
 categories: unityplugin
 image: ""
-lang: zh_CN
+lang: zh_cn
 
 titleImg: "assets/myPic/unityplugin/simplespriteselect/simplespriteselect_final.png"
 

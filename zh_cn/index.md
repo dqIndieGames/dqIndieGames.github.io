@@ -4,7 +4,7 @@
 
 layout: home
 
-lang: zh_CN
+lang: zh_cn
 
 title: "中文测试"
 
