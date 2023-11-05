@@ -2,7 +2,7 @@
 
 layout: navigation
 
-lang: zh_CN
+lang: zh_cn
 
 title: "DQ独游"
 

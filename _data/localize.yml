@@ -1,23 +1,23 @@
 myTitle: 
   en: DQ Indie Games
-  zh_CN: DQ独游
+  zh_cn: DQ独游
 
 description:
   en: I am an independent game developer, specializing in creating 2D pixel art games using Unity. My first indie game is coming soon to Steam, so stay tuned!
-  zh_CN: 我是一名独立游戏开发者，专注于使用Unity开发2D像素风格的游戏。我的首款独立游戏即将在Steam平台上线，敬请期待！
+  zh_cn: 我是一名独立游戏开发者，专注于使用Unity开发2D像素风格的游戏。我的首款独立游戏即将在Steam平台上线，敬请期待！
 
 myBlog:
   en: Blog
-  zh_CN: 博客
+  zh_cn: 博客
 
 unityPlugin:
   en: Unity plugin
-  zh_CN: unity插件
+  zh_cn: unity插件
 
 myGames:
   en: My Games
-  zh_CN: 我的游戏
+  zh_cn: 我的游戏
 
 goToPost:
   en: Go to Post
-  zh_CN: 查看文章
+  zh_cn: 查看文章
