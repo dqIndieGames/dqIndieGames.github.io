@@ -29,7 +29,12 @@ function getLocalizedUrl(baseurl, url, lang) {
   function goToRoot(baseurl, lang) {
     let temp;
     if (lang === 'en') {
-        temp = baseurl; 
+        // temp = baseurl;
+
+        // set temp to index.html
+        temp = baseurl + '/' + 'index.html';
+
+
     } else {
         temp = baseurl + '/' + lang + '/' + 'index.html';
     }
